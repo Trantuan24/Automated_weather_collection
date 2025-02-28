@@ -1,0 +1,39 @@
+[2025-02-27T23:10:40.935+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-02-27T23:10:41.045+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_etl.transform_data scheduled__2025-02-27T23:00:00+00:00 [queued]>
+[2025-02-27T23:10:41.069+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_etl.transform_data scheduled__2025-02-27T23:00:00+00:00 [queued]>
+[2025-02-27T23:10:41.070+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-02-27T23:10:41.099+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_data> on 2025-02-27 23:00:00+00:00
+[2025-02-27T23:10:41.115+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=285) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-02-27T23:10:41.115+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'weather_etl', 'transform_data', 'scheduled__2025-02-27T23:00:00+00:00', '--job-id', '99', '--raw', '--subdir', 'DAGS_FOLDER/weather_etl.py', '--cfg-path', '/tmp/tmpgn4kn60s']
+[2025-02-27T23:10:41.119+0000] {standard_task_runner.py:63} INFO - Started process 287 to run task
+[2025-02-27T23:10:41.120+0000] {standard_task_runner.py:91} INFO - Job 99: Subtask transform_data
+[2025-02-27T23:10:41.185+0000] {task_command.py:426} INFO - Running <TaskInstance: weather_etl.transform_data scheduled__2025-02-27T23:00:00+00:00 [running]> on host 083d33cb466d
+[2025-02-27T23:10:41.269+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weather_etl' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2025-02-27T23:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-02-27T23:00:00+00:00'
+[2025-02-27T23:10:41.271+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-02-27T23:10:41.537+0000] {python.py:237} INFO - Done. Returned value was:     city_id      city_name country  ... visibility  dew_point  precipitation
+0   1581130          Hanoi      VN  ...      10000       None            0.0
+1   1566083    Ho Chi Minh      VN  ...      10000       None            0.0
+2   1583992        Da Nang      VN  ...      10000       None            0.0
+3   1572151      Nha Trang      VN  ...      10000       None            0.0
+4   1586203        Can Tho      VN  ...      10000       None            0.0
+5   1562798           Vinh      VN  ...      10000       None            0.0
+6   1580240            Hue      VN  ...      10000       None            0.0
+7   1586896  Buon Ma Thuot      VN  ...      10000       None            0.0
+8   1584071         Da Lat      VN  ...      10000       None            0.0
+9   1568574       Quy Nhon      VN  ...      10000       None            0.0
+10  1569684         Pleiku      VN  ...      10000       None            0.0
+11  1566166      Thanh Hoa      VN  ...      10000       None            0.0
+12  1566319    Thai Nguyen      VN  ...      10000       None            0.0
+13  1591449       Bac Ninh      VN  ...      10000       None            0.0
+14  1571058     Phan Thiet      VN  ...      10000       None            0.0
+15  1574023         My Tho      VN  ...      10000       None            0.0
+16  1568510       Rach Gia      VN  ...      10000       None            0.0
+17  1580410        Ha Long      VN  ...      10000       None            0.0
+18  1586443         Ca Mau      VN  ...      10000       None            0.0
+
+[19 rows x 15 columns]
+[2025-02-27T23:10:41.551+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-02-27T23:10:41.578+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=weather_etl, task_id=transform_data, run_id=scheduled__2025-02-27T23:00:00+00:00, execution_date=20250227T230000, start_date=20250227T231041, end_date=20250227T231041
+[2025-02-27T23:10:41.635+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-02-27T23:10:41.670+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-02-27T23:10:41.675+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
