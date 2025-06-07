@@ -243,7 +243,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
+- **Duy Tuan** - *Initial work* - [YourGitHub](https://github.com/Trantuan24)
 
 ## 🙏 Acknowledgments
 
@@ -253,7 +253,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-📧 **Contact**: your.email@example.com | 🌐 **Website**: [yourwebsite.com](https://yourwebsite.com)
+📧 **Contact**: duytuan2412k4@gmail.com
+
 
 
 
